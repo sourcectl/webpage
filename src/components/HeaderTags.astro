@@ -11,14 +11,14 @@ export interface Props {
 
 const { title, description, image, canonicalURL, ogType } = Astro.props as Props;
 
-let ogTypeValue = "website";
+let ogTypeValue = 'website';
 if (ogType) {
 	ogTypeValue = ogType;
 }
-
 ---
+
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 <title>{title}</title>
 <meta name="description" content={description} />
@@ -26,7 +26,7 @@ if (ogType) {
 <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 <!-- 
 <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
 -->
