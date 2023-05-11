@@ -20,3 +20,7 @@ clean: ## Deletes the generated content and node_modules
 .PHONY: init
 init: ## Installs dependencies
 	npm install
+
+.PHONY: prettier
+prettier: ## Run prettier (file formatting)
+	node_modules/.bin/prettier -w .
