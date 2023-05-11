@@ -1,20 +1,12 @@
 ---
-/*
-export interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
 
-const { href, title, body } = Astro.props;
-*/
 ---
 
 <section class="xl:bg-contain bg-top bg-no-repeat" style="background-color: #F9FAFC;">
 	<div class="container px-4 mx-auto">
 		<nav class="flex justify-between items-center py-6">
 			<a class="text-3xl font-semibold leading-none" href="#">
-				<img class="h-10" src="images/logos/metis/metis.svg" alt="" width="auto" />
+				<img class="h-10" src="/images/logos/metis/metis.svg" alt="" width="auto" />
 			</a>
 			<div class="lg:hidden">
 				<button class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
@@ -25,15 +17,21 @@ const { href, title, body } = Astro.props;
 				</button>
 			</div>
 			<ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
-				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
-				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">About Us</a></li>
-				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
+				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#features">Features</a></li>
+				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#how-it-works">How it works</a></li>
+				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#pricing">Pricing</a></li>
+				<!-- TODO Add Changelog
+				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/changelog/">Changelog</a></li>
+				-->
+				<!-- TODO Add FAQ
+				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/frequently-asked-questions/">FAQ</a></li>
+				-->
+				<li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#contact">Contact</a></li>
 			</ul>
 			<div class="hidden lg:block">
-				<a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Log In</a><a
+				<a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="https://app.sourcectl.dev/">Log In</a><a
 					class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded"
-					href="#">Sign Up</a>
+					href="https://app.sourcectl.dev/">Start now</a>
 			</div>
 		</nav>
 	</div>
@@ -42,7 +40,7 @@ const { href, title, body } = Astro.props;
 		<nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
 				<a class="mr-auto text-3xl font-semibold leading-none" href="#">
-					<img class="h-10" src="images/logos/metis/metis.svg" alt="" width="auto" />
+					<img class="h-10" src="/images/logos/metis/metis.svg" alt="" width="auto" />
 				</a>
 				<button class="navbar-close">
 					<svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -52,30 +50,30 @@ const { href, title, body } = Astro.props;
 			</div>
 			<div>
 				<ul>
-					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Product</a></li>
-					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Company</a></li>
-					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">About Us</a></li>
-					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Features</a></li>
+					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#features">Features</a></li>
+					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#how-it-works">How it works</a></li>
+					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#pricing">Pricing</a></li>
+					<!-- TODO Add Changelog
+					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/changelog/">Changelog</a></li>
+					-->
+					<!-- TODO Add FAQ
+					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/frequently-asked-questions/">FAQ</a></li>
+					-->
+					<li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#contact">Contact</a></li>
 				</ul>
 				<div class="mt-4 pt-6 border-t border-blueGray-100">
-					<a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Sign Up</a><a
+					<a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="https://app.sourcectl.dev/">Start now</a><a
 						class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded"
-						href="#">Log In</a>
+						href="https://app.sourcectl.dev/">Log In</a>
 				</div>
 			</div>
 			<div class="mt-auto">
 				<p class="my-4 text-xs text-blueGray-400">
 					<span>Get in Touch</span>
-					<a class="text-blue-600 hover:text-blue-600 underline" href="#">info@example.com</a>
+					<a class="text-blue-600 hover:text-blue-600 underline" href="mailto:andy@sourcectl.dev">andy@sourcectl.dev</a>
 				</p>
-				<a class="inline-block px-1" href="#">
-					<img src="images/icons/facebook-blue.svg" alt="" />
-				</a>
-				<a class="inline-block px-1" href="#">
-					<img src="images/icons/twitter-blue.svg" alt="" />
-				</a>
-				<a class="inline-block px-1" href="#">
-					<img src="images/icons/instagram-blue.svg" alt="" />
+				<a class="inline-block px-1" href="https://twitter.com/sourcectl" title="@sourcectl at twitter">
+					<img src="/images/icons/twitter-blue.svg" alt="twitter logo" />
 				</a>
 			</div>
 		</nav>
