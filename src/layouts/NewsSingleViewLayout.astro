@@ -16,7 +16,6 @@ const { content } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let title = ''.concat(content.title, ' - sourcectl');
-
 ---
 
 <!DOCTYPE html>
@@ -30,25 +29,24 @@ let title = ''.concat(content.title, ' - sourcectl');
 
 			<section class="py-20">
 				<div class="container px-4 mx-auto">
-				  <div class="max-w-2xl mx-auto mb-12">
-					<div class="text-center mb-6">
-					  <span class="text-base md:text-lg">
-						<span class="text-blueGray-500">
-							<time class="date" datetime={content.pubDate}>{formatDate(content.pubDate)}</time>
-						</span>
-					  </span>
-					  <h1 class="text-4xl md:text-5xl my-2 font-bold font-heading text-blueGray-600">{content.title}</h1>
+					<div class="max-w-2xl mx-auto mb-12">
+						<div class="text-center mb-6">
+							<span class="text-base md:text-lg">
+								<span class="text-blueGray-500">
+									<time class="date" datetime={content.pubDate}>{formatDate(content.pubDate)}</time>
+								</span>
+							</span>
+							<h1 class="text-4xl md:text-5xl my-2 font-bold font-heading text-blueGray-600">{content.title}</h1>
+						</div>
 					</div>
-					
-				  </div>
-				  <div class="mb-8">
-					<img class="h-80 mx-auto mb-6 object-cover rounded" src={content.cover} alt={content.title} title={content.title}>
-				  </div>
-				  <div id="changelog_content" class="max-w-2xl mx-auto">
-					<slot />
+					<div class="mb-8">
+						<img class="h-80 mx-auto mb-6 object-cover rounded" src={content.cover} alt={content.title} title={content.title} />
+					</div>
+					<div id="changelog_content" class="max-w-2xl mx-auto">
+						<slot />
+					</div>
 				</div>
-				</div>
-			  </section>
+			</section>
 
 			<Footer />
 		</div>

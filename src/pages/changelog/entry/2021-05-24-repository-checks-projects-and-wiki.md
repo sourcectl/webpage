@@ -1,10 +1,10 @@
 ---
 layout: ../../../layouts/NewsSingleViewLayout.astro
-title: "Repository Checks: Projects and Wiki"
+title: 'Repository Checks: Projects and Wiki'
 pubDate: '2021-05-24'
-cover: "/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png"
-images: ["/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png"]
-description: "We are introducing two new checks to improve the UX/UI of your GitHub page slightly."
+cover: '/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png'
+images: ['/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png']
+description: 'We are introducing two new checks to improve the UX/UI of your GitHub page slightly.'
 ---
 
 Providing a good User Interface (UI) and a flawless User Experience is a tough job.
@@ -18,10 +18,10 @@ However, we can ensure that we only show relevant menu items by deactivating not
 The Wiki is used for documentation, tutorials, guides, benchmarks, or relevant resources like books or related projects.
 Good examples are:
 
-* [the programing language Go](https://github.com/golang/go/wiki)
-* [the ohmyzsh project](https://github.com/ohmyzsh/ohmyzsh/wiki)
-* [the text editor vscode](https://github.com/microsoft/vscode/wiki)
-* [the JavaScript library d3.js](https://github.com/d3/d3/wiki)
+- [the programing language Go](https://github.com/golang/go/wiki)
+- [the ohmyzsh project](https://github.com/ohmyzsh/ohmyzsh/wiki)
+- [the text editor vscode](https://github.com/microsoft/vscode/wiki)
+- [the JavaScript library d3.js](https://github.com/d3/d3/wiki)
 
 Many projects on GitHub don't leverage the Wiki functionality, even if this feature is enabled by default when creating a new repository.
 
@@ -34,15 +34,15 @@ Projects are a powerful feature of GitHub to manage bigger efforts for your proj
 It comes especially handy for the organization of a lot of issues and tracking progress with multiple contributors.
 Good examples are:
 
-* [the public roadmap of GitHub](https://github.com/github/roadmap/projects/1)
-* [the cross-compile mobile framework flutter](https://github.com/flutter/flutter/projects)
-* [the container scheduling and management platform kubernetes](https://github.com/kubernetes/kubernetes/projects)
-* [the home automation platform HomeAssistant](https://github.com/home-assistant/core/projects)
+- [the public roadmap of GitHub](https://github.com/github/roadmap/projects/1)
+- [the cross-compile mobile framework flutter](https://github.com/flutter/flutter/projects)
+- [the container scheduling and management platform kubernetes](https://github.com/kubernetes/kubernetes/projects)
+- [the home automation platform HomeAssistant](https://github.com/home-assistant/core/projects)
 
 Similar to the Wiki, this feature
 
-* is enabled by default when creating a new repository
-* often not used at all (due to various reasons)
+- is enabled by default when creating a new repository
+- often not used at all (due to various reasons)
 
 In this case, this can be disabled to optimize the user flow.
 

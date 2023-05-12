@@ -1,10 +1,10 @@
 ---
 layout: ../../../layouts/NewsSingleViewLayout.astro
-title: "Repository Checks: New check \"Social Preview Image\""
+title: 'Repository Checks: New check "Social Preview Image"'
 pubDate: '2021-04-28'
-cover: "/images/changelog/2021-04-28-repository-checks-social-preview-image/social-preview-image.png"
-images: ["/images/changelog/2021-04-28-repository-checks-social-preview-image/social-preview-image.png"]
-description: "Check if your repository has a nice image when it is getting shared in Social Media."
+cover: '/images/changelog/2021-04-28-repository-checks-social-preview-image/social-preview-image.png'
+images: ['/images/changelog/2021-04-28-repository-checks-social-preview-image/social-preview-image.png']
+description: 'Check if your repository has a nice image when it is getting shared in Social Media.'
 ---
 
 Today we are introducing a new Repository Check: The **Social Preview Image**.

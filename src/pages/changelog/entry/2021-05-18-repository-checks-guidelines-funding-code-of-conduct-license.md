@@ -1,9 +1,9 @@
 ---
 layout: ../../../layouts/NewsSingleViewLayout.astro
-title: "Repository Checks: 4 new checks (Community, finance, legal)"
+title: 'Repository Checks: 4 new checks (Community, finance, legal)'
 pubDate: '2021-05-18'
-cover: "/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png"
-images: ["/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png"]
+cover: '/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png'
+images: ['/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png']
 description: "We are introducing four new repository checks focusing on your project's community, finance, and legal aspect."
 ---
 
@@ -45,4 +45,3 @@ Adding a license can boost the adoption of your repository.
 ## Now online
 
 Since today, all four checks are available in our [Repository Checks dashboard](/changelog/entry/2021-04-26-repository-checks-open-source-best-practices).
-
