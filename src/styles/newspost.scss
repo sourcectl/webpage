@@ -35,14 +35,14 @@ Due to the Markdown convertion, be have static HTML.
 	p {
 		@apply mb-6;
 		@apply leading-loose;
-		@apply text-blueGray-400;
+		@apply text-blueGray-500;
 	}
 
 	ol {
 		@apply list-decimal;
 		@apply mb-4;
 		@apply text-base;
-		@apply text-blueGray-400;
+		@apply text-blueGray-500;
 		@apply list-inside;
 
 		li {
@@ -55,7 +55,7 @@ Due to the Markdown convertion, be have static HTML.
 		@apply px-5;
 		@apply mb-6;
 		@apply text-base;
-		@apply text-blueGray-400;
+		@apply text-blueGray-500;
 
 		li {
 			@apply mb-3;
