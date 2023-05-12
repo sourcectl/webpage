@@ -4,9 +4,7 @@ export interface Props {
 	n: number;
 }
 
-import { URLify } from '../scripts/urlify.js';
 import { formatDateWithoutWeekday } from '../scripts/date.js';
-import { cutText } from '../scripts/strings.js';
 
 const { entry, n } = Astro.props;
 const { frontmatter } = entry;
