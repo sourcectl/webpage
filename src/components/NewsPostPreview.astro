@@ -9,11 +9,6 @@ import { formatDateWithoutWeekday } from '../scripts/date.js';
 const { entry, n } = Astro.props;
 const { frontmatter } = entry;
 
-let imageRight = false;
-if (n % 2 > 0) {
-	imageRight = true
-}
-
 ---
 
 { n % 2 == 0 && (
