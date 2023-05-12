@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://sourcectl.dev/',
-	trailingSlash: 'always',
+	trailingSlash: 'ignore',
 
 	integrations: [tailwind(), sitemap()],
 });

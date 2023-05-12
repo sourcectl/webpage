@@ -1,0 +1,84 @@
+/**
+
+Used to style a single news post.
+Due to the Markdown convertion, be have static HTML.
+*/
+
+#changelog_content {
+	h2 {
+		@apply text-2xl;
+		@apply md:text-3xl;
+		@apply my-2;
+		@apply font-bold;
+		@apply font-heading;
+		@apply text-blueGray-600;
+	}
+
+	h3 {
+		@apply text-xl;
+		@apply md:text-2xl;
+		@apply my-2;
+		@apply font-bold;
+		@apply font-heading;
+		@apply text-blueGray-600;
+	}
+
+	h4 {
+		@apply text-lg;
+		@apply md:text-xl;
+		@apply my-2;
+		@apply font-bold;
+		@apply font-heading;
+		@apply text-blueGray-600;
+	}
+
+	p {
+		@apply mb-6;
+		@apply leading-loose;
+		@apply text-blueGray-400;
+	}
+
+	ol {
+		@apply list-decimal;
+		@apply mb-4;
+		@apply text-base;
+		@apply text-blueGray-400;
+		@apply list-inside;
+
+		li {
+			@apply mb-3;
+		}
+	}
+
+	ul {
+		@apply list-disc;
+		@apply px-5;
+		@apply mb-6;
+		@apply text-base;
+		@apply text-blueGray-400;
+
+		li {
+			@apply mb-3;
+		}
+	}
+
+	blockquote {
+		@apply mb-6;
+		@apply px-6;
+		@apply py-2;
+		@apply border-l-2;
+		@apply border-yellow-500;
+
+		p {
+			@apply mb-4;
+			@apply leading-tight;
+			@apply font-medium;
+		}
+	}
+
+	a {
+		color: #F56739;
+		@apply hover:text-yellow-600;
+		@apply underline;
+	}
+}
