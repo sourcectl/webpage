@@ -5,7 +5,15 @@ import FAQAnswer from '../../components/FAQAnswer.astro';
 
 // Build the list of questions
 let allQuestions = await Astro.glob('./*.md');
-//allQuestions.sort((a, b) => b.frontmatter.question > a.frontmatter.question);
+allQuestions.sort(function (a, b) {
+  if (a.frontmatter.question < b.frontmatter.question) {
+    return -1;
+  }
+  if (a.frontmatter.question > b.frontmatter.question) {
+    return 1;
+  }
+  return 0;
+});
 ---
 
 <Layout title="Welcome to Astro.">
