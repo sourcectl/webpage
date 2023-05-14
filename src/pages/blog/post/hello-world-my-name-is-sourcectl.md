@@ -4,7 +4,7 @@ title: 'Hello World, my name is sourcectl'
 pubDate: '2021-04-19'
 author: 'Andy Grunwald'
 authorLink: 'https://twitter.com/andygrunwald'
-cover: '/images/blog/hello-world-my-name-is-sourcectl/hello-world.png'
+coverImage: '/images/blog/hello-world-my-name-is-sourcectl/hello-world.png'
 images: ['/images/blog/hello-world-my-name-is-sourcectl/hello-world.png']
 description: 'Today, we are proud to launch the initial version of sourcectl.'
 ---

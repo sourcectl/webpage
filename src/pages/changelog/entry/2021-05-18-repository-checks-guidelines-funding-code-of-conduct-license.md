@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Repository Checks: 4 new checks (Community, finance, legal)'
 pubDate: '2021-05-18'
-cover: '/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png'
+coverImage: '/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png'
 images: ['/images/changelog/2021-05-18-repository-checks-guidelines-funding-code-of-conduct-license/community-funding-legal.png']
 description: "We are introducing four new repository checks focusing on your project's community, finance, and legal aspect."
 ---

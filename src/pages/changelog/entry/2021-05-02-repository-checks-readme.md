@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Repository Checks: New check "README"'
 pubDate: '2021-05-02'
-cover: '/images/changelog/2021-05-02-repository-checks-readme/readme.png'
+coverImage: '/images/changelog/2021-05-02-repository-checks-readme/readme.png'
 images: ['/images/changelog/2021-05-02-repository-checks-readme/readme.png']
 description: 'Does your repository contain a README? Now, sourcectl can check this!'
 ---

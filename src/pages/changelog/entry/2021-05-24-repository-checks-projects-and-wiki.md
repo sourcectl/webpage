@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Repository Checks: Projects and Wiki'
 pubDate: '2021-05-24'
-cover: '/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png'
+coverImage: '/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png'
 images: ['/images/changelog/2021-05-24-repository-checks-projects-and-wiki/github-wiki-used-not-used.png']
 description: 'We are introducing two new checks to improve the UX/UI of your GitHub page slightly.'
 ---

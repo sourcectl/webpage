@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Repository single views'
 pubDate: '2021-06-02'
-cover: '/images/changelog/2021-06-02-repository-single-views/single-view.png'
+coverImage: '/images/changelog/2021-06-02-repository-single-views/single-view.png'
 images: ['/images/changelog/2021-06-02-repository-single-views/single-view.png']
 description: 'See now all the details of a single repository.'
 ---

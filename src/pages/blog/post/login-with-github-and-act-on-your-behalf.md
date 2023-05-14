@@ -4,7 +4,7 @@ title: 'Login with GitHub and "Act on your behalf"'
 pubDate: '2021-04-22'
 author: 'Andy Grunwald'
 authorLink: 'https://twitter.com/andygrunwald'
-cover: '/images/blog/login-with-github-and-act-on-your-behalf/cover-picture.png'
+coverImage: '/images/blog/login-with-github-and-act-on-your-behalf/cover-picture.png'
 images: ['/images/blog/login-with-github-and-act-on-your-behalf/cover-picture.png']
 description: 'A few users have contacted us saying that the phrase "Act on your behalf", which appears during the first login with GitHub, discourages them from using sourcectl. This post explains why this phrase is misleading and why we can''t act on your behalf.'
 ---

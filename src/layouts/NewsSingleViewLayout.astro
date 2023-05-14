@@ -1,13 +1,9 @@
 ---
-/*
-export interface Props {
-	title: string;
-}
-*/
 import HeaderTags from '../components/HeaderTags.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import { formatDate } from '../scripts/date.js';
+import { cutText } from '../scripts/strings.js';
 
 import '../styles/newspost.scss';
 
@@ -15,13 +11,14 @@ const { content } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-let title = ''.concat(content.title, ' - sourcectl');
+const title = ''.concat(content.title, ' - sourcectl');
+const description = cutText(content.description, 200);
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<HeaderTags title={title} description="TODO" image="TODO" {canonicalURL} />
+		<HeaderTags title={title} description={description} image={content.coverImage} {canonicalURL} />
 	</head>
 	<body class="antialiased bg-body text-body font-body">
 		<div class="">
@@ -40,7 +37,7 @@ let title = ''.concat(content.title, ' - sourcectl');
 						</div>
 					</div>
 					<div class="mb-8">
-						<img class="h-80 mx-auto mb-6 object-cover rounded" src={content.cover} alt={content.title} title={content.title} />
+						<img class="h-80 mx-auto mb-6 object-cover rounded" src={content.coverImage} alt={content.title} title={content.title} />
 					</div>
 					<div id="changelog_content" class="max-w-2xl mx-auto">
 						<slot />

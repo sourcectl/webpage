@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Repository Checks: Open Source Best Practices for your repository'
 pubDate: '2021-04-26'
-cover: '/images/changelog/2021-04-26-repository-checks-open-source-best-practices/checks.png'
+coverImage: '/images/changelog/2021-04-26-repository-checks-open-source-best-practices/checks.png'
 images: ['/images/changelog/2021-04-26-repository-checks-open-source-best-practices/checks.png']
 description: 'Today, we are introducing automated checks to test your repository against Open Source Best Practices.'
 ---

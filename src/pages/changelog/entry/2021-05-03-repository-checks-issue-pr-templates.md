@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Repository Checks: New checks for "Issue- and Pull Request templates"'
 pubDate: '2021-05-03'
-cover: '/images/changelog/2021-05-03-repository-checks-issue-pr-templates/issue-pull-request-template.png'
+coverImage: '/images/changelog/2021-05-03-repository-checks-issue-pr-templates/issue-pull-request-template.png'
 images: ['/images/changelog/2021-05-03-repository-checks-issue-pr-templates/issue-pull-request-template.png']
 description: 'Today, we are introducing checks for Issue- and Pull Request-Templates.'
 ---

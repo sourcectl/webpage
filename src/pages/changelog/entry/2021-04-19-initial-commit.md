@@ -2,7 +2,7 @@
 layout: ../../../layouts/NewsSingleViewLayout.astro
 title: 'Initial commit'
 pubDate: '2021-04-19'
-cover: '/images/changelog/2021-04-19-initial-commit/2021-04-19-traffic.png'
+coverImage: '/images/changelog/2021-04-19-initial-commit/2021-04-19-traffic.png'
 images: ['/images/changelog/2021-04-19-initial-commit/2021-04-19-traffic.png']
 description: 'The first version is ready — our foundation for future changes.'
 ---
