@@ -8,7 +8,7 @@ let allBlogPosts = await Astro.glob('./post/*.md');
 allBlogPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="sourcectl blog - Insights into your Software Development Lifecycle">
 	<section class="py-20">
 		<div class="container px-4 mx-auto">
 			<h2 class="mb-12 lg:mb-20 text-3xl md:text-4xl font-bold font-heading">Our Changelog</h2>

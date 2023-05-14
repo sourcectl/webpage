@@ -1,21 +1,34 @@
 ---
 export interface Props {
 	title: string;
+	description: string;
+	image: string;
 }
 
 import HeaderTags from '../components/HeaderTags.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 
-const { title } = Astro.props;
+const { title, description, image } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+let headerImage = "/images/logos/sourcectl.png";
+if (image && image.length > 0) {
+	headerImage = image;
+}
+
+let headerDescription = "Gain more insights into your Software Development Lifecycle. Measure and streamline your development process.";
+if (description && description.length > 0) {
+	headerDescription = description;
+}
+
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<HeaderTags title={title} description="TODO" image="TODO" {canonicalURL} />
+		<HeaderTags title={title} description={headerDescription} image={headerImage} {canonicalURL} />
 	</head>
 	<body class="antialiased bg-body text-body font-body">
 		<div class="">
