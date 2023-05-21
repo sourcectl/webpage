@@ -16,7 +16,6 @@ module.exports = {
 			black: '#000',
 			white: '#fff',
 
-			
 			'sourcectl-orange':'#F56739',
 			'sourcectl-gray':'#666666',
 
