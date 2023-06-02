@@ -34,18 +34,18 @@ if (ogType) {
 <link rel="canonical" href={canonicalURL} />
 
 <meta property="og:locale" content="en_GB" />
-<meta property="og:url" content={canonicalURL} >
-<meta property="og:type" content={ogTypeValue}>
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:type" content={ogTypeValue} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{image && (<meta property="og:image" content={new URL(image, canonicalURL)}>)}
+{image && <meta property="og:image" content={new URL(image, canonicalURL)} />}
 
 <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
-<meta property="twitter:domain" content={Astro.site.host}>
-<meta property="twitter:url" content={canonicalURL}>
+<meta property="twitter:domain" content={Astro.site.host} />
+<meta property="twitter:url" content={canonicalURL} />
 <meta name="twitter:site" content="@sourcectl" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-{image && (<meta name="twitter:image" content={new URL(image, canonicalURL)}>)}
+{image && <meta name="twitter:image" content={new URL(image, canonicalURL)} />}
 
 <script src="/js/menu.js" is:inline></script>

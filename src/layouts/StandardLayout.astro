@@ -13,16 +13,15 @@ const { title, description, image } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-let headerImage = "/images/logos/sourcectl.png";
+let headerImage = '/images/logos/sourcectl.png';
 if (image && image.length > 0) {
 	headerImage = image;
 }
 
-let headerDescription = "Gain more insights into your Software Development Lifecycle. Measure and streamline your software development process.";
+let headerDescription = 'Gain more insights into your Software Development Lifecycle. Measure and streamline your software development process.';
 if (description && description.length > 0) {
 	headerDescription = description;
 }
-
 ---
 
 <!DOCTYPE html>
