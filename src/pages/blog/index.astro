@@ -11,7 +11,7 @@ allBlogPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date
 <Layout title="sourcectl blog - Insights into your Software Development Lifecycle">
 	<section class="py-20">
 		<div class="container px-4 mx-auto">
-			<h2 class="mb-12 lg:mb-20 text-3xl md:text-4xl font-bold font-heading">Our Changelog</h2>
+			<h2 class="mb-12 lg:mb-20 text-3xl md:text-4xl font-bold font-heading">Our Blog</h2>
 
 			{allBlogPosts.map((entry, i) => <NewsPostPreview entry={entry} n={i} />)}
 		</div>
