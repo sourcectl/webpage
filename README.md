@@ -1,3 +1,7 @@
+## Dependencies
+
+Dependencies are managed by [Renovate Bot/Mend: Dashboard](https://developer.mend.io/github/sourcectl).
+
 # Astro Starter Kit: Basics
 
 ```

@@ -22,3 +22,10 @@ pnpm-debug.log*
 
 # Template
 shuffle/
+
+# AI
+.claude/
+
+# Code Coverage
+coverage.out
+coverage.html
