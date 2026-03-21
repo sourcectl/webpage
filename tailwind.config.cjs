@@ -232,13 +232,16 @@ module.exports = {
 			0: '0',
 			DEFAULT: '1',
 		},
-		fontFamily: {
-			body: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-			heading: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-			sans: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-			serif: 'Georgia, Cambria, "Times New Roman", Times, serif',
-			mono: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-		},
+		fontFamily: (() => {
+			const inter = 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+			return {
+				body: inter,
+				heading: inter,
+				sans: inter,
+				serif: 'Georgia, Cambria, "Times New Roman", Times, serif',
+				mono: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+			};
+		})(),
 		fontSize: {
 			xs: '0.75rem',
 			sm: '0.875rem',
