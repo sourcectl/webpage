@@ -1,6 +1,9 @@
 ---
 export interface Props {
-	episode: any;
+	entry: {
+		frontmatter: Record<string, any>;
+		url?: string;
+	};
 	n: number;
 }
 
