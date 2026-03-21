@@ -1,6 +1,8 @@
 ---
 export interface Props {
-	episode: any;
+	entry: {
+		frontmatter: Record<string, any>;
+	};
 	n: number;
 }
 
