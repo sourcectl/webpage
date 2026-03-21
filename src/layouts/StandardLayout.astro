@@ -5,6 +5,7 @@ export interface Props {
 	image?: string;
 }
 
+import '../styles/global.css';
 import HeaderTags from '../components/HeaderTags.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
@@ -29,7 +30,7 @@ if (description && description.length > 0) {
 	<head>
 		<HeaderTags title={title} description={headerDescription} image={headerImage} {canonicalURL} />
 	</head>
-	<body class="antialiased bg-body text-body font-body">
+	<body class="antialiased bg-white text-body font-body">
 		<div class="">
 			<Navigation />
 

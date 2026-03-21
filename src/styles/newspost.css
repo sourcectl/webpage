@@ -1,8 +1,9 @@
-/**
+/*
+ * Used to style a single news post.
+ * Due to the Markdown conversion, we have static HTML.
+ */
 
-Used to style a single news post.
-Due to the Markdown convertion, be have static HTML.
-*/
+@reference "./global.css";
 
 #changelog_content {
 	h2 {

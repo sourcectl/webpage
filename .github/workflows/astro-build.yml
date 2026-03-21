@@ -10,7 +10,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'astro.config.mjs'
-      - 'tailwind.config.cjs'
+
       - 'tsconfig.json'
       - '.node-version'
       - 'Makefile'
@@ -23,7 +23,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'astro.config.mjs'
-      - 'tailwind.config.cjs'
+
       - 'tsconfig.json'
       - '.node-version'
       - 'Makefile'
