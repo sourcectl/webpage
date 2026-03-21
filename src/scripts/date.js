@@ -1,28 +1,17 @@
+const baseOptions = {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+};
+
 export function formatDate(date) {
-	const options = {
-		weekday: 'long',
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric',
-	};
-	return new Date(date).toLocaleDateString('en-GB', options);
+	return new Date(date).toLocaleDateString('en-GB', { weekday: 'long', ...baseOptions });
 }
 
 export function formatUnixTimestampToDate(timestamp) {
-	const options = {
-		weekday: 'long',
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric',
-	};
-	return new Date(timestamp * 1000).toLocaleDateString('en-GB', options);
+	return new Date(timestamp * 1000).toLocaleDateString('en-GB', { weekday: 'long', ...baseOptions });
 }
 
 export function formatDateWithoutWeekday(date) {
-	const options = {
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric',
-	};
-	return new Date(date).toLocaleDateString('en-GB', options);
+	return new Date(date).toLocaleDateString('en-GB', baseOptions);
 }
