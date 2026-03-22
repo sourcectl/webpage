@@ -4,7 +4,7 @@ import Layout from '../layouts/StandardLayout.astro';
 import FAQAnswer from '../components/FAQAnswer.astro';
 
 // Build the list of questions
-let allQuestions = await Astro.glob('../data/frequently-asked-questions/*.md');
+let allQuestions = Object.values(import.meta.glob('../data/frequently-asked-questions/*.md', { eager: true }));
 allQuestions.sort(function (a, b) {
 	if (a.frontmatter.question < b.frontmatter.question) {
 		return -1;
