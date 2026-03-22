@@ -6,6 +6,7 @@
     ":automergeMinor",
     "schedule:weekends"
   ],
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
