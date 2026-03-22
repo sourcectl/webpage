@@ -4,7 +4,7 @@ import Layout from '../../layouts/StandardLayout.astro';
 import NewsPostPreview from '../../components/NewsPostPreview.astro';
 
 // Build the list of Changelog entries
-let allChangelogEntries = await Astro.glob('./entry/*.md');
+let allChangelogEntries = Object.values(import.meta.glob('./entry/*.md', { eager: true }));
 allChangelogEntries.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 ---
 
