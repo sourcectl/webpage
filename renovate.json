@@ -3,14 +3,9 @@
   "extends": [
     "config:best-practices",
     "config:js-app",
-    ":automergeMinor",
     "schedule:weekends"
   ],
   "osvVulnerabilityAlerts": true,
-  "packageRules": [
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    }
-  ]
+  "labels": ["dependencies"],
+  "assignees": ["andygrunwald"]
 }
